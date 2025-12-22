@@ -1,3 +1,4 @@
-target
-/slides/async_rust_tui.html
 .env
+logs
+slides/async_rust_tui.html
+target

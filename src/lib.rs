@@ -1,14 +1,21 @@
 use anyhow::bail;
-use sncf::{Call, call_me};
+// Fix this import
+use sncf::{Call, call_me, call_me_twice};
 
 pub fn run() -> anyhow::Result<()> {
     let arg1 = Call::Ok;
 
     call_me(arg1)?;
+
+    let arg2 = Call::Ko;
+    // Fix me --v
+    let _ = call_me_twice(arg2);
+    let _ = call_me_twice(arg2);
     Ok(())
 }
 
-pub fn api_check(api: String) -> anyhow::Result<()> {
+// Fix me --v
+fn api_check(api: String) -> anyhow::Result<()> {
     match api.as_str() {
         "change_me" => Ok(()),
         _ => bail!("Wrong api key"),
