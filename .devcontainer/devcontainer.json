@@ -33,8 +33,14 @@
 	},
 	"customizations": {
 		"vscode": {
-			"extensions": [],
-			"settings": {}
+			"extensions": [
+				"Gruntfuggly.todo-tree"
+			],
+			"settings": {
+				"todo-tree.general.tags": ["FIXME"],
+				"todo-tree.tree.flat": true,
+				"todo-tree.tree.expanded": true
+			}
 		}
 	},
 	"secrets": {

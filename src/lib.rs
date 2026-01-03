@@ -1,5 +1,5 @@
 use anyhow::bail;
-// Fix this import
+// FIXME: Fix this import
 use sncf::{Call, call_me, call_me_twice};
 
 pub fn run() -> anyhow::Result<()> {
@@ -8,13 +8,13 @@ pub fn run() -> anyhow::Result<()> {
     call_me(arg1)?;
 
     let arg2 = Call::Ko;
-    // Fix me --v
+    // FIXME: Fix me --v
     let _ = call_me_twice(arg2);
     let _ = call_me_twice(arg2);
     Ok(())
 }
 
-// Fix me --v
+// FIXME: Fix me --v
 fn api_check(api: String) -> anyhow::Result<()> {
     match api.as_str() {
         "change_me" => Ok(()),

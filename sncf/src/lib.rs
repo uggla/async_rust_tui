@@ -21,12 +21,12 @@ pub enum Call {
 /// assert!(call_me(Call::Ko).is_err());
 /// ```
 pub fn call_me(arg: Call) -> Result<(), SncfAPIError> {
-    // complete this function
+    // FIXME: complete this function
     todo!()
 }
 
 pub fn call_me_twice(arg: Call) -> Result<(), SncfAPIError> {
-    // complete this function
+    // FIXME: complete this function
     todo!()
 }
 
