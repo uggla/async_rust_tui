@@ -18,6 +18,7 @@
 	"portsAttributes": {
 		"\\./server.py": {
 			"label": "Slides Server",
+			"protocol": "http",
 			"onAutoForward": "openPreview"
 		}
 	},
@@ -28,13 +29,19 @@
 		"reveal.js": "git submodule init && git submodule update"
 	},
 	"postAttachCommand": {
-		"slides-server": ".devcontainer/slides-server.sh",
 		"gitconfig": ".devcontainer/gitconfig.sh postAttach"
 	},
 	"customizations": {
 		"vscode": {
-			"extensions": [],
-			"settings": {}
+			"extensions": [
+				// "Gruntfuggly.todo-tree",
+				"maattdd.gitless"
+			],
+			"settings": {
+				// "todo-tree.general.tags": ["Fix", "***DO***"],
+				// "todo-tree.general.automaticGitRefreshInterval": 0,
+				// "todo-tree.filtering.ignoreGitSubmodules": true
+			}
 		}
 	},
 	"secrets": {
